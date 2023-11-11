@@ -40,6 +40,9 @@
         margin: 0 auto; 
         padding: 0 15px;
     }
+    .svg-menu {
+        fill: #2E2F42;
+    }
     .navigation-list {
         display: none;
     }
