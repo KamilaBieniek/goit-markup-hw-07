@@ -711,6 +711,20 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+    .mobile-menu-body {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        width: 392px;
+        height: 100vh;
+        overflow: scroll;
+        background-color: #fcfcfc;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 72px 24px 24px 24px;
+    }
     }
 
 
@@ -1551,7 +1565,7 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
 .address-list {
     display: flex; 
     gap: 40px; 
-    padding-left: 332px;}
+    padding-left: 300px;}
 .address-link {
     font-style: normal; 
     text-decoration: none; 
@@ -1768,10 +1782,16 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
 .customer-icon {
     fill: currentColor;
     }
-.footer {background-color: #2E2F42; display: flex; padding: 100px 0; margin: 0 auto;}
+.footer {
+    background-color: #2E2F42; 
+    display: flex; 
+    height: 312px;
+    margin: 0 auto;
+    }
 .div-footer {
     display: flex; 
     align-items: baseline;
+    margin-top: -100px;
     }
 .div-logo {
     text-align: left;
