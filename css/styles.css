@@ -408,7 +408,8 @@
         padding: 96px 0 120px 0;
     }
     .filter-list {
-        display: flex; 
+        display: flex;
+        flex-wrap: wrap; 
         justify-content: center; 
         gap: 24px; 
         margin-bottom: 72px;
@@ -440,12 +441,11 @@
     }
     .services-list {
         display: flex; 
-        flex-wrap: wrap; 
-        column-gap: 24px; 
-        row-gap: 72px;
+        flex-wrap: wrap;  
+        row-gap: 48px;
     }
     .li-app {
-        width: calc((100% - 24px)/2);
+        width: 100%;
     }
     .app-link { 
         width: 100%;
@@ -720,6 +720,14 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
+    .mobile-menu-window.is-hidden {
+        opacity: 0;
+        visibility: hidden; 
+        pointer-events: none;
+        transition-property: opacity, visibility;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
     .mobile-menu-body {
         position: absolute;
         top: 50%;
