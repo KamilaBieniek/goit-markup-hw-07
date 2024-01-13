@@ -649,7 +649,7 @@
         display: block;
         min-width: 169px;
         height: 56px;
-        margin-left: 95px;
+        margin: auto;
         background-color: var(--color-iris);
         color: var(--color-white);
         border: none;
@@ -979,9 +979,13 @@
     }
     .address-list {
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
+        align-items: center; 
         gap: 40px; 
         padding-left: 300px;
+    }
+    .address-link {
+        font-size: 16px;
     }
     .catchphrase { 
         max-width: 1440px; 
